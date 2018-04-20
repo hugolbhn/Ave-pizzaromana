@@ -1,0 +1,103 @@
+<div class="content">
+  <div class="navbar">
+    <div class="Link accueil">
+    <% if current_page?('/') %>
+      <div class="current-square"></div>
+      <div class=" current-page button">
+        <%= link_to "Accueil", root_path, class: "button-text" %>
+      </div>
+    <% else %>
+      <div class="other-page button">
+        <%= link_to "Accueil", root_path, class: "button-text" %>
+      </div>
+    <% end %>
+    </div>
+    <div class="Link menu">
+      <% if current_page?('/pages/menu') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+          <%= link_to "Menu", menu_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+          <%= link_to "Menu", menu_path, class: "button-text" %>
+        </div>
+      <% end %>
+    </div>
+     <div class="Link squadra">
+      <% if current_page?('/pages/squadra') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+          <%= link_to "Squadra", squadra_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+          <%= link_to "Squadra", squadra_path, class: "button-text" %>
+        </div>
+      <% end %>
+    </div>
+     <div class="Link presse">
+      <% if current_page?('/pages/presse') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+          <%= link_to "Presse", presse_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+          <%= link_to "Presse", presse_path, class: "button-text" %>
+        </div>
+      <% end %>
+    </div>
+     <div class="Link aperitivo">
+      <% if current_page?('/pages/aperitivo') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+          <%= link_to "Aperitivo", aperitivo_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+          <%= link_to "Aperitivo", aperitivo_path, class: "button-text" %>
+        </div>
+      <% end %>
+    </div>
+     <div class="Link galerie">
+      <% if current_page?('/pages/galerie') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+          <%= link_to "Galerie", galerie_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+          <%= link_to "Galerie", galerie_path, class: "button-text" %>
+        </div>
+      <% end %>
+    </div>
+     <div class="Link contact">
+      <% if current_page?('/pages/contact') %>
+        <div class="current-square">
+        </div>
+        <div class="current-page button">
+        <%= link_to "Contact", contact_path, class: "button-text" %>
+        </div>
+      <% else %>
+        <div class="other-page button">
+        <%= link_to "Contact", contact_path, class: "button-text" %>
+
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
